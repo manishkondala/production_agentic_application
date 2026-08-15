@@ -7,6 +7,9 @@ Haystack - https://github.com/deepset-ai/haystack
 LlamaIndex - https://docs.llamaindex.ai/en/stable/optimizing/production_rag/
 RAGFlow - https://github.com/infiniflow/ragflow
 
+### Agentic AI public tools
+Public free tools - https://github.com/GetStream/ai-agent-tools-catalog
+
 ### VectorDB packages -
 ChromaDB - https://www.trychroma.com/
 vectordb - https://github.com/jina-ai/vectordb
