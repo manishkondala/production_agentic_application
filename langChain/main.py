@@ -56,8 +56,6 @@ llm_obj = ChatGoogleGenerativeAI(
 )
 
 search_tool = TavilySearch(max_results=2)
-result = llm_obj.invoke("What year is it?")
-
 prompt = Client().pull_prompt('hwchase17/react', dangerously_pull_public_prompt=True)
 
 tools = [get_weather_data, search_tool]
@@ -78,9 +76,8 @@ agent_executer = AgentExecutor(
 
 user_query = st.text_input(
     "Enter your query: ",
-    placeholder="Example: Find the capital of Washington, DC and get its weather"
+    placeholder="Example: Find the capital of Washington, DC and get its weather, humidity and chance of rain in %"
 )
-
 
 ## Run Agent
 if st.button("Run Agent"):
